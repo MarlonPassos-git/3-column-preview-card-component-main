@@ -1,0 +1,259 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list], ul, ol {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.container {
+  display: flex;
+  place-items: center;
+  flex-direction: column;
+  font-family: "Lexend Deca", sans-serif;
+  padding: 5.5rem 0;
+  overflow: hidden;
+  min-height: 100%;
+  min-height: 100vh;
+}
+@media (min-width: 950px) {
+  .container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.container .area {
+  max-width: 20.4375rem;
+  height: 27.625rem;
+  padding: 3.0625rem;
+}
+@media (min-width: 950px) {
+  .container .area {
+    max-width: 19.1875rem;
+    height: 31.25rem;
+  }
+}
+.container .icon {
+  width: 4rem;
+  height: 2.5rem;
+}
+.container .title {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  color: #F2F2F2;
+  margin: 1.875rem 0 1.1875rem;
+}
+.container .paragraph {
+  opacity: 0.75;
+  line-height: 1.67;
+  color: #FFFFFF;
+  font-size: 0.9375rem;
+}
+.container .button {
+  background-color: #F2F2F2;
+  width: 9.125rem;
+  height: 3rem;
+  display: grid;
+  place-items: center;
+  border-radius: 1.5rem;
+  line-height: 1.67;
+  font-size: 0.9375rem;
+  color: #006971;
+  margin-top: 1.5625rem;
+}
+@media (min-width: 950px) {
+  .container .button {
+    margin-top: 5.1875rem;
+  }
+}
+.container .button:hover {
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 1ss;
+  transition-duration: 1s;
+  background-color: transparent;
+  border: solid 2px #FFFFFF;
+  color: #FFFFFF;
+}
+.container .sedans {
+  background-color: #E28625;
+}
+@media (min-width: 950px) {
+  .container .sedans {
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+}
+.container .suvs {
+  background-color: #006971;
+}
+.container .luxury {
+  background-color: #004140;
+}
+@media (min-width: 950px) {
+  .container .luxury {
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+}
+
+:root {
+  --animate-duration: 1s;
+}
+
+body {
+  background-color: #F2F2F2;
+}
+
+@media (min-width: 950px) {
+  .animate__hinge {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-duration: calc(var(--animate-duration)*2);
+    animation-duration: calc(var(--animate-duration)*2);
+    -webkit-animation-name: hinge;
+    animation-name: hinge;
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+  }
+}
+
+@-webkit-keyframes hinge {
+  0% {
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+  }
+  20%, 60% {
+    -webkit-transform: rotate(80deg);
+    transform: rotate(80deg);
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+  }
+  40%, 80% {
+    -webkit-transform: rotate(60deg);
+    transform: rotate(60deg);
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: translate3d(0, 700px, 0);
+    transform: translate3d(0, 700px, 0);
+    opacity: 0;
+  }
+}
+@keyframes hinge {
+  0% {
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+  }
+  20%, 60% {
+    -webkit-transform: rotate(80deg);
+    transform: rotate(80deg);
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+  }
+  40%, 80% {
+    -webkit-transform: rotate(60deg);
+    transform: rotate(60deg);
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: translate3d(0, 700px, 0);
+    transform: translate3d(0, 700px, 0);
+    opacity: 0;
+  }
+}
+.hvr-radial-out {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+  background: #e1e1e1;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+/*# sourceMappingURL=style.css.map */

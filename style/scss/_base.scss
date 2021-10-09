@@ -1,0 +1,17 @@
+// Functions 
+
+@function rem($pixels, $contexto: 16) {
+    @return ($pixels / $contexto) * 1rem;
+}
+
+// Color
+
+$c__concrete: #F2F2F2;
+$c__black: #000000;
+$c__white: #FFFFFF;
+$c__cyprus: #004140;
+$c__mosque: #006971;
+$c__zest: #E28625;
+$c__mountain-meadow: #19B89D;
+$c__java: #26B5C0;
+$c__kournikova: #FFD473;
