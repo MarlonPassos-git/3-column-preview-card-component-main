@@ -124,6 +124,36 @@ select {
   color: #FFFFFF;
   font-size: 0.9375rem;
 }
+.container .sedans {
+  background-color: #E28625;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+@media (min-width: 950px) {
+  .container .sedans {
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+}
+.container .sedans .button {
+  color: #E28625;
+}
+.container .suvs {
+  background-color: #006971;
+}
+.container .suvs .button {
+  color: #006971;
+}
+.container .luxury {
+  background-color: #004140;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+@media (min-width: 950px) {
+  .container .luxury {
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+}
+.container .luxury .button {
+  color: #004140;
+}
 .container .button {
   background-color: #F2F2F2;
   width: 9.125rem;
@@ -133,7 +163,6 @@ select {
   border-radius: 1.5rem;
   line-height: 1.67;
   font-size: 0.9375rem;
-  color: #006971;
   margin-top: 1.5625rem;
 }
 @media (min-width: 950px) {
@@ -149,25 +178,6 @@ select {
   background-color: transparent;
   border: solid 2px #FFFFFF;
   color: #FFFFFF;
-}
-.container .sedans {
-  background-color: #E28625;
-}
-@media (min-width: 950px) {
-  .container .sedans {
-    border-radius: 0.5rem 0 0 0.5rem;
-  }
-}
-.container .suvs {
-  background-color: #006971;
-}
-.container .luxury {
-  background-color: #004140;
-}
-@media (min-width: 950px) {
-  .container .luxury {
-    border-radius: 0 0.5rem 0.5rem 0;
-  }
 }
 
 :root {

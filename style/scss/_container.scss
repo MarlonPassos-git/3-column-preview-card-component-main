@@ -49,6 +49,41 @@
         font-size: rem(15)
     }
 
+    
+
+    .sedans  {
+        background-color: $c__zest;
+        border-radius: rem(8) rem(8) 0 0;
+        @media (min-width: 950px) {
+            border-radius: rem(8) 0 0 rem(8) ;
+        }
+
+        .button {
+            color:$c__zest;
+        }
+    }
+
+    .suvs {
+        background-color: $c__mosque;
+        .button {
+            color:$c__mosque;
+        }
+    }
+
+    .luxury {
+        background-color: $c__cyprus;
+        @media (min-width: 950px) {
+            border-radius: 0 rem(8) rem(8) 0;
+        }
+        .button {
+            color:$c__cyprus;
+        }
+
+        
+            border-radius:  0 0 rem(8) rem(8) ;
+        
+    }
+
     .button {
         background-color: $c__concrete;
         width: rem(146);
@@ -58,7 +93,7 @@
         border-radius: rem(24);
         line-height: 1.67;
         font-size: rem(15);
-        color: $c__mosque;
+        
         margin-top: rem(25);
         
 
@@ -79,24 +114,6 @@
             color: $c__white;
 
 
-        }
-    }
-
-    .sedans {
-        background-color: $c__zest;
-        @media (min-width: 950px) {
-            border-radius: rem(8) 0 0 rem(8) ;
-        }
-    }
-
-    .suvs {
-        background-color: $c__mosque;
-    }
-
-    .luxury {
-        background-color: $c__cyprus;
-        @media (min-width: 950px) {
-            border-radius: 0 rem(8) rem(8) 0;
         }
     }
 }
